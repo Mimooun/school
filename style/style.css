@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+body, html{
+    height: 100%;
+}
+
+.max-width{
+    padding: 0px 150px;
+    height: 100%;
+}
+
+.home {
+    height: 100%;
+    background-image: url(../images/home-slide-bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.home .overlay{
+    height: 100%;
+    background :rgba(0, 0, 0, 0.6);
+}
+
+.home .logo img:hover{
+    cursor: pointer;
+}
+
+.home .container nav{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    padding: 20px 0px 20px;
+}
+
+.home nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.home nav ul li{
+    margin: 0px 15px;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+
+.home nav ul li:hover{
+    color: #0BC560;
+    cursor: pointer;
+}
+
+.home .icons{
+    display: flex;
+    justify-content: center;
+}
+
+.home .icons i{
+    margin: 0px 5px;
+    font-size: 20px;
+    transition: 0.5s ease;
+}
+
+.home .icons i:hover{
+    color: #0BC560;
+    cursor: pointer;
+}
+
+.home .centre-container{
+    height: 70%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home .centre-container .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home .centre-container .description .title{
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.home .centre-container .description .two{
+    color: #0BC560;
+}
+
+.home .centre-container .description .text{
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.home .centre-container .description button{
+    width: 160px;
+    height: 50px;
+    background-color: transparent;
+    color: #0BC560;
+    border: 1px solid #0BC560;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+.home .centre-container .description button:hover{
+    background-color: #0BC560;
+    color: white;
+}
+
+.home .centre-container .pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home .centre-container .pic img{
+    width: 70%;
+}
+
+.about-us{
+    padding: 80px 0;
+    background-color:#F5F5F5;
+}
+
+.about-us .text,
+.about-video .text,
+.facts .text,
+.teachers .text{
+    text-align: center;
+}
+
+.about-us .text .title,
+.about-video .text .title,
+.facts .text .title,
+.teachers .text .title{
+    font-size: 40px;
+    font-weight: 300;
+    color: #383f45;
+    margin-bottom: 20px;
+}
+
+.about-us .text .title span,
+.about-video .text .title span,
+.facts .text .title span,
+.teachers .text .title span{
+    color: #0BC560;
+}
+
+.about-us .text hr,
+.about-video .text hr,
+.facts .text hr,
+.teachers .text hr{
+    width: 200px;
+    margin: auto;
+    color: #0BC560;
+}
+
+.about-us .text .para,
+.about-video .text .para,
+.facts .text .para,
+.teachers .text .para{
+    margin: 20px 0;
+    color: #777777;
+}
+
+.about-us .cards {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-us .cards .card{
+    background-color: white;
+    width: 360px;
+    margin: 10px 10px;
+    text-align: center;
+    padding: 40px 30px ;
+}
+
+.about-us .cards .card .icon{
+    background-color: #F5F5F5;
+    display: inline-table;
+    border-radius: 50%;
+}
+
+.about-us .cards .card .icon i{
+    color: #0BC560;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.about-us .cards .card .title{
+    font-size: 22px;
+    font-weight: 600;
+    color: #0BC560;
+    margin-top: 20px;
+}
+
+.about-us .cards .card .para{
+    font-size: 18px;
+    color: #777777;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.about-video{
+    padding: 80px 0;
+}
+
+.about-video .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 50px;
+}
+
+.about-video .container .right .text{
+    text-align: justify;
+    color:#777777 ;
+    line-height: 30px;
+}
+
+.about-video .container .right .icon-text{
+    margin: 25px 0;
+}
+
+.about-video .container .right .icon-text i{
+    margin-right: 10px;
+    color: #0BC560;
+}
+
+
+.about-video .container .left .video-part{
+    background: url("../images/video-overlay.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    position: relative;
+}
+
+.about-video .container .left .video-part .icon{
+    background-color: #0BC560;
+    border-radius: 50%;
+    padding: 25px;
+    display: inline-table;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(252, 251, 250, 0.8);
+    animation: pulse 2s infinite;
+}
+
+.about-video .container .left .video-part .icon:hover{
+    animation: none;
+}
+
+.about-video .container .left .video-part .icon i {
+    color: white;
+    font-size: 40px;
+}
+
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(252, 251, 250, 0.8);
+      box-shadow: 0 0 0 0 rgba(252, 251, 250, 0.8);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+
+  .about-video .container .left .video-overlay{
+      width: 100%;
+      height: 100%;
+      background-color: rgba(22, 22, 22, 0.7);
+      position: absolute;
+      visibility: hidden;
+      z-index: 1;
+  }
+
+  .about-video .container .left .video-overlay a{
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+    position: relative;
+    float: right;
+    right: 20%;
+    top: 15%;
+  }
+
+.about-video .container .left iframe{
+    z-index: 999;
+    opacity: 1;
+    position: relative;
+    float: right;
+    right: 20%;
+    top: 20%;
+}
+
+.facts {
+    background: url("../images/facts-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    height: auto;
+}
+
+.facts .overlay{
+    background :rgba(0, 0, 0, 0.6);
+    height: 100%;
+    padding: 60px 0;
+}
+
+.facts .text .title,
+.facts .text .para{
+    color: white;
+}
+
+.facts .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.facts .cards .card{
+    width: 150px;
+    background-color :rgba(0, 0, 0, 0.527);
+    color: white;
+    margin: 50px 15px;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+.facts .cards .card i{
+    font-size: 30px;
+}
+
+.facts .cards .card .number{
+    color: #0BC560;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.facts .cards .card .desc{
+    font-size: 20px;
+}
+
+.teachers{
+    padding: 80px 0;
+}
+
+.teachers .owl-carousel{
+    padding: 80px 150px;
+}
+
+.owl-nav{
+    display: none;
+}
+
+.owl-dots{
+    margin-top: 20px;
+}
+
+.owl-dots .owl-dot .active{
+    background-color: #0BC560;
+}
+
+.teachers .owl-carousel .item{
+    display: flex;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    padding: 40px 10px;
+}
+
+.teachers .owl-carousel .item img{
+    border-radius: 10px
+}
+
+.teachers .owl-carousel .item .text{
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.teachers .owl-carousel .item .text .name{
+    color: #555555;
+    font-size: 26px;
+}
+
+.teachers .owl-carousel .item .text .desc{
+    font-size: 20px;
+    font-weight: 600;
+    color: #0BC560;
+}
+
+.teachers .owl-carousel .item .text .para{
+    color: #777777;
+}
+
+.teachers .owl-carousel .item .icons{
+    font-size: 20px;
+    color: #777777;
+}
+
+.teachers .owl-carousel .item .icons i:first-child{
+    padding-left: 0px !important;
+}
+
+.teachers .owl-carousel .item .icons i {
+    padding: 0px 5px;
+    transition: 0.5s ease;
+}
+
+.teachers .owl-carousel .item .icons i:hover{
+    color: #0BC560;
+    cursor: pointer;
+}
+.footer {
+    padding: 30px;
+}
+.footer  .content-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer  .content-footer img{
+    margin-bottom: 20px;
+}
